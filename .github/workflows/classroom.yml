@@ -1,0 +1,30 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Run dotnet test
+      id: run-dotnet-test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Run dotnet test
+        setup-command: sudo apt-get install -y dotnet-sdk-8.0
+        command: dotnet test
+        timeout: 2
+        max-score: 10
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        RUN-DOTNET-TEST_RESULTS: "${{steps.run-dotnet-test.outputs.result}}"
+      with:
+        runners: run-dotnet-test
