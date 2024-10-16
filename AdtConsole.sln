@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdtConsole", "AdtConsole\AdtConsole.csproj", "{D09F0AF4-F718-4343-ACF4-BAF749FF9B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayAdt", "ArrayAdt\ArrayAdt.csproj", "{04F128FF-6E17-4166-B35E-8C95E43236ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayTest", "ArrayTest\ArrayTest.csproj", "{7D18E223-6999-4790-82F1-C8B3DD4F4DBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D09F0AF4-F718-4343-ACF4-BAF749FF9B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09F0AF4-F718-4343-ACF4-BAF749FF9B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09F0AF4-F718-4343-ACF4-BAF749FF9B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09F0AF4-F718-4343-ACF4-BAF749FF9B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F128FF-6E17-4166-B35E-8C95E43236ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F128FF-6E17-4166-B35E-8C95E43236ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F128FF-6E17-4166-B35E-8C95E43236ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F128FF-6E17-4166-B35E-8C95E43236ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D18E223-6999-4790-82F1-C8B3DD4F4DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D18E223-6999-4790-82F1-C8B3DD4F4DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D18E223-6999-4790-82F1-C8B3DD4F4DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D18E223-6999-4790-82F1-C8B3DD4F4DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
