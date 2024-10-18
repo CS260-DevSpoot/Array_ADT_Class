@@ -74,6 +74,19 @@ public class Barray
     /// <param name="newLength">The new capacity of the array.</param>
     public void Resize(uint newLength)
     {
-        throw new NotImplementedException();
+        int[]? currentArray = intArray;
+        int[]? newArray = new int[newLength];
+        
+        for (var i = 0; i < newLength -1; i++)
+        {
+            if (i >= currentArray?.Length || currentArray == null)
+            {
+                newArray[i] = 0;
+                continue;
+            }
+            newArray[i] = currentArray[i];
+        }
+
+        intArray = newArray;
     }
 }
