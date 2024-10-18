@@ -77,7 +77,7 @@ public class Barray
         int[]? currentArray = intArray;
         int[]? newArray = new int[newLength];
         
-        for (var i = 0; i < newLength -1; i++)
+        for (var i = 0; i < newLength; i++)
         {
             if (i >= currentArray?.Length || currentArray == null)
             {
@@ -86,7 +86,7 @@ public class Barray
             }
             newArray[i] = currentArray[i];
         }
-
+        
         intArray = newArray;
     }
 }
