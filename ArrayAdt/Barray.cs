@@ -10,6 +10,7 @@ namespace ArrayAdt;
 public class Barray
 {
     // You probably want some data member(s) on your class here
+    private int[]? intArray = null;
 
     /// <summary>
     /// Create an instance with the specified capacity.
@@ -18,7 +19,7 @@ public class Barray
     /// <param name="size">The maximum capacity of the array.</param>
     public Barray(uint size)
     {
-        throw new NotImplementedException();
+        intArray = new int[size];
     }
 
     /// <summary>
@@ -28,7 +29,7 @@ public class Barray
     /// <param name="values">The initial values to store in the array.</param>
     public Barray(int[] values)
     {
-        throw new NotImplementedException();
+        intArray = values;
     }
 
     /// <summary>
@@ -37,7 +38,12 @@ public class Barray
     /// <returns>The length/capacity.</returns>
     public uint Length()
     {
-        throw new NotImplementedException();
+        if (intArray == null)
+        {
+            return 0;
+        }
+
+        return (uint)intArray.Length;
     }
 
     /// <summary>
@@ -47,7 +53,8 @@ public class Barray
     /// <returns>The value.</returns>
     public int Get(uint index)
     {
-        throw new NotImplementedException();
+
+        return intArray[index];
     }
 
     /// <summary>
@@ -57,7 +64,7 @@ public class Barray
     /// <param name="value">The value to store.</param>
     public void Set(uint index, int value)
     {
-        throw new NotImplementedException();
+        intArray[index] = value;
     }
 
     /// <summary>
